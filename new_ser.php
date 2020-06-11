@@ -33,6 +33,9 @@ if ($_POST['mediaserie'] == '1' and $_POST['media'] != 'None'){
     fwrite($fp, "}\n");
     fclose($fp);
 }
+$fp = fopen("dati/$myfile.txt", 'a');
+fwrite($fp, '\serie');
+fclose($fp);
 ?>
 <body>
 <h1>Dati ripetute</h1>
